@@ -1,0 +1,7 @@
+unique_name: "Average Grid Voltage"
+object_type: "metric"
+label: "Average Grid Voltage"
+description: "Average grid voltage in volts at the plant connection."
+dataset: "Plant Snapshot Facts"
+column: "grid_voltage_v"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Average MTTR Hours"
+object_type: "metric"
+label: "Average MTTR Hours"
+description: "Average mean time to repair (MTTR) in hours; lower is better. Not the MTBF."
+dataset: "Plant Snapshot Facts"
+column: "mttr_hours"
+calculation_method: "average"

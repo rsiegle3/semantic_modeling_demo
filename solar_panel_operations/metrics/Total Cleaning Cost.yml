@@ -1,0 +1,7 @@
+unique_name: "Total Cleaning Cost"
+object_type: "metric"
+label: "Total Cleaning Cost"
+description: "Total panel cleaning cost in currency units summed over snapshots. Not maintenance or replacement cost."
+dataset: "Plant Snapshot Facts"
+column: "cleaning_cost"
+calculation_method: "sum"

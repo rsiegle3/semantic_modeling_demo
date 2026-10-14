@@ -1,0 +1,7 @@
+unique_name: "Average UV Index"
+object_type: "metric"
+label: "Average UV Index"
+description: "Average ultraviolet index at the plant."
+dataset: "Plant Snapshot Facts"
+column: "uv_index"
+calculation_method: "average"

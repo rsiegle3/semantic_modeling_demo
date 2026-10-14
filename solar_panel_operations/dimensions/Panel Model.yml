@@ -1,0 +1,70 @@
+unique_name: "Panel Model"
+object_type: "dimension"
+label: "Panel Model"
+type: "standard"
+level_attributes:
+  - unique_name: "Panel Model"
+    label: "Panel Model"
+    description: "Panel model code (Model-102 style), the model installed at a plant; about 596 models. Reached from a snapshot through its plant."
+    dataset: "Panel Models Table"
+    key_columns:
+      - "modkey"
+    name_column: "modkey"
+    is_unique_key: true
+hierarchies:
+  - unique_name: "Panel Model Hierarchy"
+    label: "Panel Model"
+    filter_empty: "yes"
+    folder: "Panel Model"
+    levels:
+      - unique_name: "Panel Model"
+        secondary_attributes:
+          - unique_name: "Panel Manufacturer"
+            label: "Panel Manufacturer"
+            description: "Panel manufacturer or maker brand (Longi, Canadian Solar, JA Solar, etc.), also called vendor. Blank when unrecorded."
+            dataset: "Panel Models Table"
+            name_column: "makertag"
+            key_columns:
+              - "makertag"
+          - unique_name: "Panel Technology"
+            label: "Panel Technology"
+            description: "Panel cell technology or type, e.g. Mono-PERC, Poly-PERC, HJT. Also called panel kind."
+            dataset: "Panel Models Table"
+            name_column: "pnlkind"
+            key_columns:
+              - "pnlkind"
+          - unique_name: "Rated Power W"
+            label: "Rated Power W"
+            description: "Panel model rated power in watts (e.g. 450, 600, 650), a catalog property of the model, not measured output."
+            dataset: "Panel Models Table"
+            name_column: "rated_w"
+            key_columns:
+              - "rated_w"
+          - unique_name: "Rated Efficiency Percent"
+            label: "Rated Efficiency Percent"
+            description: "Panel model rated module efficiency percent from the catalog. Not the measured Average Instant Efficiency of a plant snapshot."
+            dataset: "Panel Models Table"
+            name_column: "effpct"
+            key_columns:
+              - "effpct"
+          - unique_name: "Annual Degradation Rate"
+            label: "Annual Degradation Rate"
+            description: "Panel model expected degradation rate in percent per year. Not the measured Average Cumulative Degradation."
+            dataset: "Panel Models Table"
+            name_column: "degyrrate"
+            key_columns:
+              - "degyrrate"
+          - unique_name: "Temperature Coefficient"
+            label: "Temperature Coefficient"
+            description: "Panel model power temperature coefficient in percent per degree C (negative: power falls as cells heat up)."
+            dataset: "Panel Models Table"
+            name_column: "tempcoeff"
+            key_columns:
+              - "tempcoeff"
+          - unique_name: "Nominal Operating Temperature"
+            label: "Nominal Operating Temperature"
+            description: "Panel model nominal operating cell temperature (NOCT) as text in degrees C, e.g. 45.7 C."
+            dataset: "Panel Models Table"
+            name_column: "nomoptempc"
+            key_columns:
+              - "nomoptempc"

@@ -1,0 +1,7 @@
+unique_name: "Total Hotspots"
+object_type: "metric"
+label: "Total Hotspots"
+description: "Total hotspot count, overheating cells found on modules, summed over snapshots."
+dataset: "Plant Snapshot Facts"
+column: "hotspot_count"
+calculation_method: "sum"

@@ -1,0 +1,7 @@
+unique_name: "Average Inverter Efficiency"
+object_type: "metric"
+label: "Average Inverter Efficiency"
+description: "Average inverter conversion efficiency percent per snapshot. Not the module efficiency."
+dataset: "Plant Snapshot Facts"
+column: "inverter_eff_pct"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Average Performance Ratio"
+object_type: "metric"
+label: "Average Performance Ratio"
+description: "Average performance ratio (PR), actual yield versus expected yield for the irradiance. Many snapshots have no value."
+dataset: "Plant Snapshot Facts"
+column: "performance_ratio"
+calculation_method: "average"

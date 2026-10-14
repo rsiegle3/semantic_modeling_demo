@@ -1,0 +1,7 @@
+unique_name: "Total Alert Events"
+object_type: "metric"
+label: "Total Alert Events"
+description: "Total alert events (alert count) raised, summed over snapshots. Not the number of snapshots with an alert."
+dataset: "Plant Snapshot Facts"
+column: "alert_event_count"
+calculation_method: "sum"

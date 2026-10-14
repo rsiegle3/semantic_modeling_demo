@@ -1,0 +1,7 @@
+unique_name: "Total Power Loss"
+object_type: "metric"
+label: "Total Power Loss"
+description: "Total power lost in watts (power loss, lost output) summed over snapshots. See Power Loss Percent for the loss relative to output."
+dataset: "Plant Snapshot Facts"
+column: "power_loss_w"
+calculation_method: "sum"

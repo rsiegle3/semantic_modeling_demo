@@ -1,0 +1,7 @@
+unique_name: "Average Energy Yield"
+object_type: "metric"
+label: "Average Energy Yield"
+description: "Average energy yield in kWh per snapshot. Use for typical generation per reading rather than the Total Energy Yield."
+dataset: "Plant Snapshot Facts"
+column: "energy_yield_kwh"
+calculation_method: "average"

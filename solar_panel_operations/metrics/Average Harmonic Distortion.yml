@@ -1,0 +1,7 @@
+unique_name: "Average Harmonic Distortion"
+object_type: "metric"
+label: "Average Harmonic Distortion"
+description: "Average total harmonic distortion percent of the grid signal."
+dataset: "Plant Snapshot Facts"
+column: "harmonic_distortion_pct"
+calculation_method: "average"

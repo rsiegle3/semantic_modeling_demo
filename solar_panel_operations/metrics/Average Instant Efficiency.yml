@@ -1,0 +1,7 @@
+unique_name: "Average Instant Efficiency"
+object_type: "metric"
+label: "Average Instant Efficiency"
+description: "Average instantaneous module efficiency percent measured in the snapshot. Not the rated efficiency of the panel model."
+dataset: "Plant Snapshot Facts"
+column: "instant_eff_pct"
+calculation_method: "average"

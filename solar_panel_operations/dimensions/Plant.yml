@@ -1,0 +1,110 @@
+unique_name: "Plant"
+object_type: "dimension"
+label: "Plant"
+type: "standard"
+level_attributes:
+  - unique_name: "Plant"
+    label: "Plant"
+    description: "Solar plant site, shown by plant name (e.g. Solar Plant East Jake); one member per site, about 939 plants. Use to group or filter snapshots by site; the panel model installed at the plant is on the Panel Model dimension."
+    dataset: "Plant Sites Table"
+    key_columns:
+      - "sitekey"
+    name_column: "sitelabel"
+    is_unique_key: true
+hierarchies:
+  - unique_name: "Plant Hierarchy"
+    label: "Plant"
+    filter_empty: "yes"
+    folder: "Plant"
+    levels:
+      - unique_name: "Plant"
+        secondary_attributes:
+          - unique_name: "Plant Capacity MW"
+            label: "Plant Capacity MW"
+            description: "Plant capacity, installed nameplate size in megawatts (MW), a property of the plant, not of a snapshot. Use to size or band plants; not the Rated Power W of a single panel model."
+            dataset: "Plant Sites Table"
+            name_column: "cap_mw"
+            key_columns:
+              - "cap_mw"
+          - unique_name: "Go-Live Date"
+            label: "Go-Live Date"
+            description: "Plant go-live, commissioning or start-up date, a plant property. Not the Snapshot Date of a reading."
+            dataset: "Plant Sites Table"
+            name_column: "goliveon"
+            key_columns:
+              - "goliveon"
+          - unique_name: "Tilt Degrees"
+            label: "Tilt Degrees"
+            description: "Plant array tilt angle in degrees from horizontal (mounting tilt). Not the tracker angle."
+            dataset: "Plant Sites Table"
+            name_column: "tiltdeg"
+            key_columns:
+              - "tiltdeg"
+          - unique_name: "Azimuth Degrees"
+            label: "Azimuth Degrees"
+            description: "Plant array azimuth, compass orientation of the panels in degrees (180 is due south)."
+            dataset: "Plant Sites Table"
+            name_column: "azmdeg"
+            key_columns:
+              - "azmdeg"
+          - unique_name: "Recycling Status"
+            label: "Recycling Status"
+            description: "Plant end-of-life recycling plan status, e.g. In Development or Available. Blank when no note is recorded."
+            dataset: "Plant Sites Table"
+            name_column: "recyclenote"
+            key_columns:
+              - "recyclenote"
+          - unique_name: "Documentation Status"
+            label: "Documentation Status"
+            description: "Plant documentation completeness state: Missing, Partial or Complete. Not the warranty or insurance state."
+            dataset: "Plant Sites Table"
+            name_column: "docstate"
+            key_columns:
+              - "docstate"
+          - unique_name: "Warranty Status"
+            label: "Warranty Status"
+            description: "Plant warranty state: Active, Claimed or Expired. Pair with Warranty Claims; not the insurance state."
+            dataset: "Plant Sites Table"
+            name_column: "warrstate"
+            key_columns:
+              - "warrstate"
+          - unique_name: "Warranty Claims"
+            label: "Warranty Claims"
+            description: "Number of warranty claims filed against the plant to date (plant property, not a per-snapshot count)."
+            dataset: "Plant Sites Table"
+            name_column: "warrclaims"
+            key_columns:
+              - "warrclaims"
+          - unique_name: "Insurance Status"
+            label: "Insurance Status"
+            description: "Plant insurance coverage state: Covered, Partial or Expired. Not the warranty state."
+            dataset: "Plant Sites Table"
+            name_column: "insurstate"
+            key_columns:
+              - "insurstate"
+          - unique_name: "Compliance Status"
+            label: "Compliance Status"
+            description: "Plant regulatory compliance flag: Compliant, Non-Compliant or Under Review."
+            dataset: "Plant Sites Table"
+            name_column: "complyflag"
+            key_columns:
+              - "complyflag"
+          - unique_name: "Environmental Risk Level"
+            label: "Environmental Risk Level"
+            description: "Plant site environmental risk rating: Low, Medium or High (site property, not the measured weather in a snapshot)."
+            dataset: "Plant Sites Table"
+            name_column: "envtag"
+            key_columns:
+              - "envtag"
+relationships:
+  - unique_name: "Plant to Panel Model"
+    from:
+      hierarchy: "Plant Hierarchy"
+      level: "Plant"
+      dataset: "Plant Sites Table"
+      join_columns:
+        - "modhook"
+    to:
+      dimension: "Panel Model"
+      level: "Panel Model"
+    type: "embedded"

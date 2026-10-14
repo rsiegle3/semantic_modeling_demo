@@ -1,0 +1,7 @@
+unique_name: "Average Initial Max Power Current"
+object_type: "metric"
+label: "Average Initial Max Power Current"
+description: "Average baseline current at maximum power (Imp) in amps when new, not the current reading."
+dataset: "Plant Snapshot Facts"
+column: "imp_initial_a"
+calculation_method: "average"

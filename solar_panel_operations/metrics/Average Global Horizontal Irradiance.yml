@@ -1,0 +1,7 @@
+unique_name: "Average Global Horizontal Irradiance"
+object_type: "metric"
+label: "Average Global Horizontal Irradiance"
+description: "Average global horizontal irradiance (GHI) in W/m2."
+dataset: "Plant Snapshot Facts"
+column: "ghi_w_m2"
+calculation_method: "average"

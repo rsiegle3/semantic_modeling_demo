@@ -1,0 +1,7 @@
+unique_name: "Average MTBF Hours"
+object_type: "metric"
+label: "Average MTBF Hours"
+description: "Average mean time between failures (MTBF) in hours; higher is more reliable. Many snapshots have no value. Not the MTTR."
+dataset: "Plant Snapshot Facts"
+column: "mtbf_hours"
+calculation_method: "average"

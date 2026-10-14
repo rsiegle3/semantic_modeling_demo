@@ -1,0 +1,6 @@
+unique_name: "bird_solar_panel"
+object_type: "connection"
+label: "bird_solar_panel"
+as_connection: "bird_solar_panel"
+database: "solar_panel"
+schema: "public"

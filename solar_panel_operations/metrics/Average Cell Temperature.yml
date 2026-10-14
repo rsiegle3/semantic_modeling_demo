@@ -1,0 +1,7 @@
+unique_name: "Average Cell Temperature"
+object_type: "metric"
+label: "Average Cell Temperature"
+description: "Average PV cell temperature in degrees C. Not the ambient air temperature."
+dataset: "Plant Snapshot Facts"
+column: "cell_temp_c"
+calculation_method: "average"

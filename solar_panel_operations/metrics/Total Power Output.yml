@@ -1,0 +1,7 @@
+unique_name: "Total Power Output"
+object_type: "metric"
+label: "Total Power Output"
+description: "Total instantaneous power output in watts (power now, DC power) summed over snapshots. Use the Average Power Output for a typical reading."
+dataset: "Plant Snapshot Facts"
+column: "power_now_w"
+calculation_method: "sum"

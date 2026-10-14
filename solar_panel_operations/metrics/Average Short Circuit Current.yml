@@ -1,0 +1,7 @@
+unique_name: "Average Short Circuit Current"
+object_type: "metric"
+label: "Average Short Circuit Current"
+description: "Average short-circuit current (Isc) in amps, measured now."
+dataset: "Plant Snapshot Facts"
+column: "isc_now_a"
+calculation_method: "average"

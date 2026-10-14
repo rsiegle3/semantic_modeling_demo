@@ -1,0 +1,7 @@
+unique_name: "Total Energy Yield"
+object_type: "metric"
+label: "Total Energy Yield"
+description: "Total energy produced in kWh (energy yield, generation, output energy) summed over snapshots. Blank readings are ignored. Not the average per snapshot."
+dataset: "Plant Snapshot Facts"
+column: "energy_yield_kwh"
+calculation_method: "sum"

@@ -1,0 +1,7 @@
+unique_name: "Average Plane of Array Irradiance"
+object_type: "metric"
+label: "Average Plane of Array Irradiance"
+description: "Average plane-of-array (POA) irradiance in W/m2, the sunlight hitting the tilted panels."
+dataset: "Plant Snapshot Facts"
+column: "poa_irr_w_m2"
+calculation_method: "average"

@@ -1,0 +1,5 @@
+unique_name: "Power Loss Percent"
+object_type: "metric_calc"
+label: "Power Loss Percent"
+description: "Power loss rate as a ratio (0.02 = 2 percent): Total Power Loss divided by Total Power Output plus Total Power Loss. Ratio of totals, not an average of per-snapshot rates; empty when there is no output."
+expression: "[Measures].[Total Power Loss] / ([Measures].[Total Power Output] + [Measures].[Total Power Loss])"

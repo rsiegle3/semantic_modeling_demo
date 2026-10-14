@@ -1,0 +1,7 @@
+unique_name: "Total Revenue Loss"
+object_type: "metric"
+label: "Total Revenue Loss"
+description: "Total revenue lost (lost revenue from downtime or underperformance) in currency units summed over snapshots."
+dataset: "Plant Snapshot Facts"
+column: "revenue_loss"
+calculation_method: "sum"

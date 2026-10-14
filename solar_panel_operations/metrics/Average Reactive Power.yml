@@ -1,0 +1,7 @@
+unique_name: "Average Reactive Power"
+object_type: "metric"
+label: "Average Reactive Power"
+description: "Average reactive power in VAR per snapshot. Not the real power output in watts."
+dataset: "Plant Snapshot Facts"
+column: "reactive_power_var"
+calculation_method: "average"

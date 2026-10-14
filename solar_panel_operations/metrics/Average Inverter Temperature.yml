@@ -1,0 +1,7 @@
+unique_name: "Average Inverter Temperature"
+object_type: "metric"
+label: "Average Inverter Temperature"
+description: "Average inverter temperature in degrees C. Not the cell or ambient temperature."
+dataset: "Plant Snapshot Facts"
+column: "inverter_temp_c"
+calculation_method: "average"

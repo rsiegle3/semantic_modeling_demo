@@ -1,0 +1,7 @@
+unique_name: "Average Max Power Current"
+object_type: "metric"
+label: "Average Max Power Current"
+description: "Average current at maximum power (Imp) in amps, measured now. Compare with the initial Imp."
+dataset: "Plant Snapshot Facts"
+column: "imp_now_a"
+calculation_method: "average"

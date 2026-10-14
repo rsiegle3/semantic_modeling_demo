@@ -1,0 +1,7 @@
+unique_name: "Average Initial Open Circuit Voltage"
+object_type: "metric"
+label: "Average Initial Open Circuit Voltage"
+description: "Average baseline open-circuit voltage (Voc) in volts when new, not the current reading."
+dataset: "Plant Snapshot Facts"
+column: "voc_initial_v"
+calculation_method: "average"

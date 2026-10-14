@@ -1,0 +1,5 @@
+unique_name: "Operating Cost per kWh"
+object_type: "metric_calc"
+label: "Operating Cost per kWh"
+description: "Operating cost per kWh: Total Operating Cost divided by Total Energy Yield for the same snapshots (currency per kWh). Empty when there is no energy yield."
+expression: "[Measures].[Total Operating Cost] / [Measures].[Total Energy Yield]"

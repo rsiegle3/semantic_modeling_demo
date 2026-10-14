@@ -1,0 +1,20 @@
+unique_name: "Optimization Potential"
+object_type: "dimension"
+label: "Optimization Potential"
+type: "standard"
+is_degenerate: true
+level_attributes:
+  - unique_name: "Optimization Potential"
+    label: "Optimization Potential"
+    description: "Operational optimization potential of the plant snapshot, upside available from tuning: Low, Medium or High. Distinct from the Environmental Risk Level of the plant."
+    dataset: "Plant Snapshot Facts"
+    key_columns:
+      - "optimization_potential"
+    name_column: "optimization_potential"
+hierarchies:
+  - unique_name: "Optimization Potential Hierarchy"
+    label: "Optimization Potential"
+    filter_empty: "yes"
+    folder: "Optimization Potential"
+    levels:
+      - unique_name: "Optimization Potential"

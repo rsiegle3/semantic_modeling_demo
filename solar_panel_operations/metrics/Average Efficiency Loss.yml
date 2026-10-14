@@ -1,0 +1,7 @@
+unique_name: "Average Efficiency Loss"
+object_type: "metric"
+label: "Average Efficiency Loss"
+description: "Average efficiency loss percent (efficiency drop) per snapshot. Not the soiling loss."
+dataset: "Plant Snapshot Facts"
+column: "eff_loss_pct"
+calculation_method: "average"

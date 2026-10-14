@@ -1,0 +1,7 @@
+unique_name: "Average Initial Short Circuit Current"
+object_type: "metric"
+label: "Average Initial Short Circuit Current"
+description: "Average baseline short-circuit current (Isc) in amps when new, not the current reading."
+dataset: "Plant Snapshot Facts"
+column: "isc_initial_a"
+calculation_method: "average"

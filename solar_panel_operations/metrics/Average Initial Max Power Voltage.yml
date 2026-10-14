@@ -1,0 +1,7 @@
+unique_name: "Average Initial Max Power Voltage"
+object_type: "metric"
+label: "Average Initial Max Power Voltage"
+description: "Average baseline voltage at maximum power (Vmp) in volts when new, not the current reading."
+dataset: "Plant Snapshot Facts"
+column: "vmp_initial_v"
+calculation_method: "average"
