@@ -95,3 +95,5 @@ After every deploy:
   datasets take the bare table name from the connection.
 - Most all-time running-total MDX is rejected at publish, not at validate. Check any such measure
   against the period-by-period series after deploying.
+
+<!-- push test -->
