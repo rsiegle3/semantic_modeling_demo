@@ -1,0 +1,50 @@
+unique_name: comodel_demo
+object_type: catalog
+label: CoModel Demo
+description: SML semantic models built by an LLM agent (Claude Code + the AtScale MCP) directly from a warehouse schema, with no pre-existing semantic model to copy. One subject area today. Solar Panel - a local Postgres database (AtScale connection bird_solar_panel, database solar_panel, schema public) of solar plant fleet operations - model Solar Panel Operations, one row per plant performance snapshot, joined to plant, panel model, electrical performance, environmental conditions, mechanical condition, operational cost and reliability, and alert tables, covering power output and loss, efficiency, degradation, availability, maintenance and cleaning cost, and alert state by plant, panel model and snapshot time.
+version: 1.7
+aggressive_agg_promotion: false
+build_speculative_aggs: false
+ai_context:
+  - source_type: other
+    source: repo layout convention - one root directory per model
+    instruction: >-
+      Repository layout, binding on every model built here. Each model gets its OWN directory at the
+      repository root, named after the model in snake_case (solar_panel_operations), and that
+      directory holds the model's own connections/, datasets/, dimensions/, metrics/, calculations/
+      and models/ subfolders. Do not write SML objects into a connections/, datasets/, dimensions/,
+      metrics/, calculations/ or models/ folder at the repository root - the root holds only
+      catalog.yml, README.md and the per-model directories. sml-cli recurses, so catalog.yml stays at
+      the root and covers every model directory beneath it. unique_name and label uniqueness is
+      repo-wide and NOT per directory, so a new model's objects need names that do not collide with
+      any other model's - prefix or qualify them (Snapshot Year, not Year). The model's unique_name
+      must not equal the catalog's unique_name (comodel_demo).
+  - source_type: warehouse
+    source: Postgres - AtScale connection "bird_solar_panel" (database solar_panel, schema public, localhost:5433)
+    instruction: >-
+      The ONLY data source for this model. Declare one SML connection with as_connection:
+      bird_solar_panel, database solar_panel, schema public. Do not point the model at any other
+      connection. Discover the tables, columns, keys, JSON fields and sample values yourself with the
+      AtScale MCP explore_datasource tool (list tables, then column details and sample data) and any
+      native column comments; no catalog, glossary or reference model is available, so every join and
+      every description is authored from what the warehouse shows. Postgres folds unquoted
+      identifiers to lowercase, so the existing lowercase names need no quoting. A derived (sql:)
+      dataset is not resolved against its connection's schema at query time, so qualify every table
+      inside it (public.plant_record), while physical table: datasets take the bare table name. A
+      derived dataset's column entries must not carry sql:. Some columns hold JSON documents - read
+      the nested paths with ->/->> and expose the fields you model as dataset columns, casting to a
+      numeric type where the value is a number.
+  - source_type: other
+    source: build and quality rules
+    instruction: >-
+      Do not read, copy or derive from any other solar panel semantic model on this machine (for
+      example the bird-atscale-models repository); build from the warehouse alone. Descriptions are
+      quoted YAML scalars in plain ASCII, because an unquoted value containing a colon and space
+      parses as a mapping. Keep unique_name label-based, since a deployed column takes its name from
+      unique_name rather than label. A model's dimensions: list holds degenerate dimensions only;
+      every other dimension is wired through a model relationships: entry. Author ratios and formulas
+      as metric_calc over component measures, never as a pre-aggregated column. Verify the data
+      before describing it: run the numbers (row counts, null rates, value ranges) and state only
+      figures you measured. After every deploy, run at least one live run_query per dimension and
+      validate every metric_calc expression with validate_mdx_expression, because validate and deploy
+      both pass on SQL that has never been executed.
