@@ -1,7 +1,0 @@
-unique_name: "Average Grid Frequency"
-object_type: "metric"
-label: "Average Grid Frequency"
-description: "Average grid frequency in hertz (about 50 Hz nominal)."
-dataset: "Plant Snapshot Facts"
-column: "grid_frequency_hz"
-calculation_method: "average"

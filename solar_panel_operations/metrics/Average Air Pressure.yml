@@ -1,7 +1,0 @@
-unique_name: "Average Air Pressure"
-object_type: "metric"
-label: "Average Air Pressure"
-description: "Average air pressure in hPa at the plant."
-dataset: "Plant Snapshot Facts"
-column: "air_pressure_hpa"
-calculation_method: "average"

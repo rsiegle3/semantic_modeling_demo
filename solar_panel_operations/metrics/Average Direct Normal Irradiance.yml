@@ -1,7 +1,0 @@
-unique_name: "Average Direct Normal Irradiance"
-object_type: "metric"
-label: "Average Direct Normal Irradiance"
-description: "Average direct normal irradiance (DNI) in W/m2."
-dataset: "Plant Snapshot Facts"
-column: "dni_w_m2"
-calculation_method: "average"

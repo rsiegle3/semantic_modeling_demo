@@ -1,7 +1,0 @@
-unique_name: "Snapshot Count"
-object_type: "metric"
-label: "Snapshot Count"
-description: "Number of plant performance snapshots (row count, one row per plant reading). Use for how many readings; not the number of distinct plants."
-dataset: "Plant Snapshot Facts"
-column: "snapshot_count"
-calculation_method: "sum"

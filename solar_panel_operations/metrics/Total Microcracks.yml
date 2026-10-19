@@ -1,7 +1,0 @@
-unique_name: "Total Microcracks"
-object_type: "metric"
-label: "Total Microcracks"
-description: "Total microcrack count found on modules, summed over snapshots."
-dataset: "Plant Snapshot Facts"
-column: "microcrack_count"
-calculation_method: "sum"

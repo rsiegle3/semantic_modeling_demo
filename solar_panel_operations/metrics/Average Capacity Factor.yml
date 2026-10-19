@@ -1,7 +1,0 @@
-unique_name: "Average Capacity Factor"
-object_type: "metric"
-label: "Average Capacity Factor"
-description: "Average capacity factor percent (actual output vs nameplate capacity) per snapshot."
-dataset: "Plant Snapshot Facts"
-column: "capacity_factor_pct"
-calculation_method: "average"

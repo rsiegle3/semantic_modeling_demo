@@ -1,7 +1,0 @@
-unique_name: "Average Series Resistance"
-object_type: "metric"
-label: "Average Series Resistance"
-description: "Average module series resistance in ohms from the IV curve."
-dataset: "Plant Snapshot Facts"
-column: "series_res_ohm"
-calculation_method: "average"

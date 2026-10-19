@@ -1,7 +1,0 @@
-unique_name: "Average Soil Loss"
-object_type: "metric"
-label: "Average Soil Loss"
-description: "Average soiling loss percent, output lost to dirt and dust on the modules (cleaning need). Not the general Efficiency Loss."
-dataset: "Plant Snapshot Facts"
-column: "soil_loss_pct"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Average Power Output"
-object_type: "metric"
-label: "Average Power Output"
-description: "Average instantaneous power output in watts per snapshot (power now). Not the summed Total Power Output."
-dataset: "Plant Snapshot Facts"
-column: "power_now_w"
-calculation_method: "average"

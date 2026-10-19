@@ -1,7 +1,0 @@
-unique_name: "Average Shunt Resistance"
-object_type: "metric"
-label: "Average Shunt Resistance"
-description: "Average module shunt resistance in ohms from the IV curve."
-dataset: "Plant Snapshot Facts"
-column: "shunt_res_ohm"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Total Maintenance Cost"
-object_type: "metric"
-label: "Total Maintenance Cost"
-description: "Total maintenance cost (maintenance spend) in currency units summed over snapshots. Not cleaning or replacement cost."
-dataset: "Plant Snapshot Facts"
-column: "maintenance_cost"
-calculation_method: "sum"

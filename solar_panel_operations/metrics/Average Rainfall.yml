@@ -1,7 +1,0 @@
-unique_name: "Average Rainfall"
-object_type: "metric"
-label: "Average Rainfall"
-description: "Average rainfall in millimeters per snapshot."
-dataset: "Plant Snapshot Facts"
-column: "rain_mm"
-calculation_method: "average"

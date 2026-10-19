@@ -1,7 +1,0 @@
-unique_name: "Average Power Factor"
-object_type: "metric"
-label: "Average Power Factor"
-description: "Average inverter power factor (0 to 1)."
-dataset: "Plant Snapshot Facts"
-column: "power_factor"
-calculation_method: "average"

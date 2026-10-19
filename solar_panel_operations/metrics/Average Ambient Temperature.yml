@@ -1,7 +1,0 @@
-unique_name: "Average Ambient Temperature"
-object_type: "metric"
-label: "Average Ambient Temperature"
-description: "Average ambient air temperature in degrees C. Not the cell temperature."
-dataset: "Plant Snapshot Facts"
-column: "ambient_temp_c"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Average Dust Density"
-object_type: "metric"
-label: "Average Dust Density"
-description: "Average airborne dust density in kg per cubic meter (a soiling driver)."
-dataset: "Plant Snapshot Facts"
-column: "dust_density_kg_m3"
-calculation_method: "average"

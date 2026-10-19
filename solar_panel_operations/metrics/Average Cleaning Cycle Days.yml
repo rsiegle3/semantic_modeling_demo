@@ -1,7 +1,0 @@
-unique_name: "Average Cleaning Cycle Days"
-object_type: "metric"
-label: "Average Cleaning Cycle Days"
-description: "Average cleaning cycle in days between panel cleanings."
-dataset: "Plant Snapshot Facts"
-column: "cleaning_cycle_days"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Average Initial Fill Factor"
-object_type: "metric"
-label: "Average Initial Fill Factor"
-description: "Average fill factor of the IV curve when new (initial or baseline, 0 to 1). Not the current Fill Factor."
-dataset: "Plant Snapshot Facts"
-column: "fill_factor_initial"
-calculation_method: "average"

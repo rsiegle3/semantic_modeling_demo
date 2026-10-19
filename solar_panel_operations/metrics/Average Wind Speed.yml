@@ -1,7 +1,0 @@
-unique_name: "Average Wind Speed"
-object_type: "metric"
-label: "Average Wind Speed"
-description: "Average wind speed in meters per second."
-dataset: "Plant Snapshot Facts"
-column: "wind_speed_m_s"
-calculation_method: "average"

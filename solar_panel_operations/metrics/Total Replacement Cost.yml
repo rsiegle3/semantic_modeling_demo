@@ -1,7 +1,0 @@
-unique_name: "Total Replacement Cost"
-object_type: "metric"
-label: "Total Replacement Cost"
-description: "Total equipment replacement cost in currency units summed over snapshots. Not maintenance or cleaning cost."
-dataset: "Plant Snapshot Facts"
-column: "replacement_cost"
-calculation_method: "sum"

@@ -1,7 +1,0 @@
-unique_name: "Average Power Quality Index"
-object_type: "metric"
-label: "Average Power Quality Index"
-description: "Average power quality index, a 0 to 1 style score of grid power quality (higher is better)."
-dataset: "Plant Snapshot Facts"
-column: "power_quality_idx"
-calculation_method: "average"

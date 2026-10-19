@@ -1,7 +1,0 @@
-unique_name: "Average Cloud Cover"
-object_type: "metric"
-label: "Average Cloud Cover"
-description: "Average cloud cover percent at the plant."
-dataset: "Plant Snapshot Facts"
-column: "cloud_cover_pct"
-calculation_method: "average"

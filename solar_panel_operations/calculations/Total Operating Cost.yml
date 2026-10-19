@@ -1,5 +1,0 @@
-unique_name: "Total Operating Cost"
-object_type: "metric_calc"
-label: "Total Operating Cost"
-description: "Total operating cost: sum of Total Maintenance Cost, Total Cleaning Cost and Total Replacement Cost over the selected snapshots, in currency units. Excludes Total Revenue Loss."
-expression: "[Measures].[Total Maintenance Cost] + [Measures].[Total Cleaning Cost] + [Measures].[Total Replacement Cost]"

@@ -1,7 +1,0 @@
-unique_name: "Average Cumulative Degradation"
-object_type: "metric"
-label: "Average Cumulative Degradation"
-description: "Average cumulative degradation percent, total aging-related power decline to date. Not the annual Degradation Rate of the model."
-dataset: "Plant Snapshot Facts"
-column: "cumulative_deg_pct"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Average Open Circuit Voltage"
-object_type: "metric"
-label: "Average Open Circuit Voltage"
-description: "Average open-circuit voltage (Voc) in volts, measured now."
-dataset: "Plant Snapshot Facts"
-column: "voc_now_v"
-calculation_method: "average"

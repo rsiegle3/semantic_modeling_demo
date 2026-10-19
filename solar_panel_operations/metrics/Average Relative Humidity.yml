@@ -1,7 +1,0 @@
-unique_name: "Average Relative Humidity"
-object_type: "metric"
-label: "Average Relative Humidity"
-description: "Average relative humidity percent at the plant."
-dataset: "Plant Snapshot Facts"
-column: "relative_humidity_pct"
-calculation_method: "average"

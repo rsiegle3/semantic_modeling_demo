@@ -1,7 +1,0 @@
-unique_name: "Average Diffuse Horizontal Irradiance"
-object_type: "metric"
-label: "Average Diffuse Horizontal Irradiance"
-description: "Average diffuse horizontal irradiance (DHI) in W/m2."
-dataset: "Plant Snapshot Facts"
-column: "dhi_w_m2"
-calculation_method: "average"

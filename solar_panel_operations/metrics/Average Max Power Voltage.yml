@@ -1,7 +1,0 @@
-unique_name: "Average Max Power Voltage"
-object_type: "metric"
-label: "Average Max Power Voltage"
-description: "Average voltage at maximum power (Vmp) in volts, measured now."
-dataset: "Plant Snapshot Facts"
-column: "vmp_now_v"
-calculation_method: "average"

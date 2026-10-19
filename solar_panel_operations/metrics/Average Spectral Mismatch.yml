@@ -1,7 +1,0 @@
-unique_name: "Average Spectral Mismatch"
-object_type: "metric"
-label: "Average Spectral Mismatch"
-description: "Average spectral mismatch percent (100 means no mismatch)."
-dataset: "Plant Snapshot Facts"
-column: "spectral_mismatch_pct"
-calculation_method: "average"

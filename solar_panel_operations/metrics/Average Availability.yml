@@ -1,7 +1,0 @@
-unique_name: "Average Availability"
-object_type: "metric"
-label: "Average Availability"
-description: "Average availability percent, share of time the plant was available to produce (uptime). Not the MTBF."
-dataset: "Plant Snapshot Facts"
-column: "availability_pct"
-calculation_method: "average"

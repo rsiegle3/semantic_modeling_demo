@@ -1,7 +1,0 @@
-unique_name: "Average Specific Yield"
-object_type: "metric"
-label: "Average Specific Yield"
-description: "Average specific yield in kWh per kW of installed capacity per snapshot (kWh/kWp); a size-normalized output measure."
-dataset: "Plant Snapshot Facts"
-column: "specific_yield_kwh_kw"
-calculation_method: "average"
